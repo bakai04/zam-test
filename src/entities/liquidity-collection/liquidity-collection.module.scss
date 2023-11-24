@@ -1,0 +1,54 @@
+@import "@/shared/styles/typography.scss";
+
+.liquidity_collection {
+    max-width: 570px;
+    width: 100%;
+
+    padding: 37px 28px 31px 28px;
+    border-radius: 24px;
+    background-color: var(--main-block);
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__timer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        @include font_h7(var(--grey-text-color));
+
+        span {
+            color: var(--blue-color-main);
+        }
+    }
+
+    &__participants {
+        @include font_subtitle_5(var(--grey-text-color));
+        text-align: end;
+        transform: translateY(10px);
+
+        span {
+            color: var(--main-text-color);
+        }
+    }
+
+    &__button {
+        text-align: center;
+        flex-direction: column;
+        padding: 10px 10px !important;
+        width: 100%;
+        gap: 0px !important;
+
+        font-weight: 600;
+
+        span {
+            @include font(inherit, 12px, 400, 19px inherit);
+        }
+    }
+}

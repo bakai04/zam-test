@@ -1,0 +1,34 @@
+@import "@/shared/styles/typography.scss";
+
+.linear_progress {
+    &__track {
+        background-color: var(--grey-block-accent);
+        height: 8px;
+        border-radius: 25px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__thumb {
+        height: 100%;
+        color: #00a337;
+        background-color: #00a337;
+    }
+
+    &__label_block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 9px;
+        color: #00a337;
+    }
+
+    &__main_label {
+        @include font_caption_1(var(--grey-text-color));
+        margin-bottom: 11px;
+    }
+
+    &__thumb_label {
+        @include font(inherit, 14px, 500, 22px, inherit);
+    }
+}

@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@mixin font(
+    $family: inherit,
+    $size,
+    $weight: normal,
+    $line-height: normal,
+    $color: inherit
+) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin font_h7($color) {
+    @include font(inherit, 14px, 700, 18px, $color);
+}
+
+@mixin font_caption_1($color) {
+    @include font(inherit, 13px, 600, 16px, $color);
+}
+
+@mixin font_caption_3($color) {
+    @include font(inherit, 11px, 600, 14px, $color);
+}
+
+@mixin font_subtitle_7($color) {
+    @include font(inherit, 12px, 600, 15px, $color);
+}
+
+@mixin font_subtitle_5($color) {
+    @include font(inherit, 14px, 600, 21px, $color);
+}

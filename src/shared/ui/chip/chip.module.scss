@@ -1,0 +1,21 @@
+@import "@/shared/styles/typography.scss";
+
+.chip {
+    @include font_subtitle_7(var(--yellow-color-dark));
+    border-radius: 33px;
+    padding: 6px 12px;
+    width: fit-content;
+    border: 1px solid var(--yellow-color-dark);
+
+    border: 1px solid var(--yellow-color-dark);
+
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.chip_secondary {
+    border: 1px solid var(--grey-block-accent);
+    color: var(--grey-accent-2);
+    background-color: var(--grey-block-accent);
+}
